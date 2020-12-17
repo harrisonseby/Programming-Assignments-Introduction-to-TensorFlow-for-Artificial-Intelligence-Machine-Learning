@@ -1,3 +1,5 @@
+# this exercise shows us how to load image data, train them and use callbacks
+
 import tensorflow as tf
 import matplotlib.pyplot as plt
 
@@ -25,7 +27,7 @@ test_images=test_images/255.0
 # first layer is flattened
 # layer 2 is of 128 units and the activation is relu function
 # layer 3 is the output layer with 10 units and activation function is softmax
-model=tf.keras.models.Sequential([tf.keras.layers.Flatten(),
+model=tf.keras.models.Sequential([tf.keras.layers.Flatten(input_shape=(28,28),
                                  tf.keras.layers.Dense(128,activation=tf.nn.relu),
                                  tf.keras.layers.Dense(10,activation=tf.nn.softmax)])
 
