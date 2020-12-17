@@ -1,3 +1,6 @@
+# this programs shows us a simple example to do linear regression 
+# this is like the hello world of tensorflow
+
 import tensorflow as tf
 import numpy as np
 from tensorflow import keras
